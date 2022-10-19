@@ -10,6 +10,37 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav id="menu">
+      <ul>
+        <li>
+          <a href="#">Principal</a>
+          <a href="#">Sobre</a>
+          <a href="#">Seja Aluno</a>
+          <a href="#">Alunos</a>
+          <a href="#">Preço</a>
+          <a href="#">Contato</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="content">
+      <%= yield %>  
+    </div>
+
+  <script>
+   function typeWrite(elemento){
+       const textoArray = elemento.innerHTML.split('');
+       elemento.innerHTML = ' ';
+       textoArray.forEach(function(letra, i){  
+          
+       setTimeout(function(){
+           elemento.innerHTML += letra;
+       }, 75 * i)
+    
+       });
+     }
+     const titulo = document.querySelector('#h2');
+     typeWrite(titulo);
+ </script>
+
   </body>
 </html>
