@@ -126,3 +126,19 @@ input[type=submit]:hover {
    background-color: #f2f2f2;
    padding: 20px;
 }
+
+#subscripts {
+   border-collapse: collapse;
+   width: 50%;
+}
+
+#subscripts td, #subscripts th {
+   border: 1px solid #ddd;
+   padding: 8px;
+}
+
+#subscripts th {
+   text-align: center;
+   background-color: #04AA6D;
+   color: white;
+}
