@@ -90,6 +90,7 @@ GEM
       reline (>= 0.2.7)
     digest (3.1.0)
     erubi (1.10.0)
+    foreman (0.87.2)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.8.11)
@@ -133,6 +134,7 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.1-x86_64-linux)
       racc (~> 1.4)
+    pg (1.4.4)
     public_suffix (4.0.6)
     puma (5.6.0)
       nio4r (~> 2.0)
@@ -224,9 +226,11 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  foreman
   importmap-rails
   jbuilder
   nokogiri
+  pg
   puma (~> 5.0)
   rails (~> 7.0.1)
   selenium-webdriver
