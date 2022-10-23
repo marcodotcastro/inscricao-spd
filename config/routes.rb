@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
+
   get 'home/index', to: 'home#index'
   root 'home#index'
   resources :subscripts, only: %i[new create index]
